@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+body{
+    background-image: url(/imgs/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.logo {
+    display: grid;
+    align-items: stretch;
+    justify-content: space-between;
+    justify-items: end;
+    align-content: space-between;
+    margin-top: 20px;
+
+}
+.logo img{
+    width: 100%;
+    margin-top: 0;
+}
+.box-login{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 350px;
+    display: grid;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    
+}
+span{
+    color: #fff;
+    font-size: small;
+    display: grid;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+header{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.input-field{
+    padding-bottom: 10px;
+
+}
+.input-field .input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: rgba(255,255,255,0.1);
+    outline: none;
+}
+i{
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: #fff;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    color: black;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s ;
+}
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+    gap: 5px;
+}
+.one{
+    display: grid;
+    align-items: center;
+}
+label a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-size: auto;
+    }
+    
+    .container {
+      width: 100%;
+      padding: 0 10px;
+      flex-direction: column;
+    }
+    
+    .logo {
+      margin-top: 10px;
+    }
+    
+    header {
+      font-size: 24px;
+    }
+    
+    .input-field .input {
+      font-size: 12px;
+      padding: 0 0 0 35px;
+    }
+    
+    .submit {
+      font-size: 12px;
+    }
+  }
+  
